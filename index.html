@@ -30,31 +30,31 @@
   <script>
     // Items ordered from most common (lowest odds) to rarest (highest odds)
     const items = [
-      { name: "You are Mosquito. Leave. No one likes you.", odds: 2 },
-      { name: "You are Dumpster. You smell like shit and no one hangs around near you.", odds: 5 },
-      { name: "You are dog shit. You're in the way of everything, and you also smell like crap. ", odds: 8 },
-      { name: "You are mold. You ruin perfectly good things. Fuck You", odds: 10 },
-      { name: "You are Gnome. Tiny bitch with no real purpose.", odds: 15 },
-      { name: "You are Asparagus. I can't name anyone who likes you.", odds: 20 },
-      { name: "You are one sock. Your only friend dissappeared.", odds: 20 },
-      { name: "You are Expiration Dates. Extremely inconvienent.", odds: 25 },
-      { name: "You are The Government. Never made a single good choice.", odds: 30 },
-      { name: "You are The Sun. Your painful to look at.", odds: 35 },
-      { name: "You are Ugly. No explanation needed.", odds: 40 },
-      { name: "You are Stupid. No explanation needed.", odds: 50 },
-      { name: "You are Fat. No explanation needed.", odds: 60 },
-      { name: "You are an Infant on a Plane Ride. Better off out the window and away from humanity.", odds: 70 },
-      { name: "You are Hummus. WHAT ARE YOU!?!?! EXPLAIN YOURSELF!!!", odds: 80 },
-      { name: "You are Little Sister. You were made to annoy. ", odds: 90 },
-      { name: "You are you. Better things exist, but many worse things do to", odds: 100 },
-      { name: "You are pretzels. The seconds greatest food", odds: 150 },
-      { name: "You are Legos. Pretty Fun, and Popular", odds: 200 },
-      { name: "You are Dog. You are awesome because you are dog", odds: 300 },
-      { name: "You are Hamburger. Almost nothing (besides Caleb) beats a hamburger", odds: 500 },
-      { name: "You are The slightest little bit Caleb. You are the slighest little bit perfect.", odds: 1000 },
-      { name: "You are Barely Caleb. You are barely perfect.", odds: 10000 },
-      { name: "You are Halway to Caleb. Halfway to perfection.", odds: 100000 },
-      { name: "You are Almost Caleb. Caleb is the only thing better than you" , odds: 1000000 }
+      { name: "Mosquito. Leave. No one likes you.", odds: 2 },
+      { name: "Dumpster. You smell like shit and no one hangs around near you.", odds: 5 },
+      { name: "Dog shit. You're in the way of everything, and you also smell like crap. ", odds: 8 },
+      { name: "Mold. You ruin perfectly good things. Fuck You", odds: 10 },
+      { name: "a Gnome. Tiny bitch with no real purpose.", odds: 15 },
+      { name: "Asparagus. I can't name anyone who likes you.", odds: 20 },
+      { name: "One sock. Your only friend dissappeared.", odds: 20 },
+      { name: "Expiration Dates. Extremely inconvienent.", odds: 25 },
+      { name: "The Government. Never made a single good choice.", odds: 30 },
+      { name: "The Sun. Your painful to look at.", odds: 35 },
+      { name: "Ugly. Bitch.", odds: 40 },
+      { name: "Stupid. Bitch.", odds: 50 },
+      { name: "Fat. Bitch.", odds: 60 },
+      { name: "an Infant on a Plane Ride. Better off out the window and falling to your death..", odds: 70 },
+      { name: "Hummus. WHAT ARE YOU!?!?! EXPLAIN YOURSELF!!!", odds: 80 },
+      { name: "a Little Sister. You were made to annoy. ", odds: 90 },
+      { name: "You. Better things exist, but many worse things do to", odds: 100 },
+      { name: "pretzels. The seconds greatest food", odds: 150 },
+      { name: "Legos. Pretty Fun, and Popular", odds: 200 },
+      { name: "Dog. You are awesome because you are dog", odds: 300 },
+      { name: "Hamburger. Almost nothing (besides Caleb) beats a hamburger", odds: 500 },
+      { name: "The slightest little bit Caleb. You are the slighest little bit perfect.", odds: 1000 },
+      { name: "Barely Caleb. You are barely perfect.", odds: 10000 },
+      { name: "Halway to Caleb. Halfway to perfection.", odds: 100000 },
+      { name: "Almost Caleb. Caleb is the only thing better than you" , odds: 1000000 }
     ];
 
     function pickRandom() {
@@ -66,7 +66,7 @@
       for (let i = 0; i < items.length; i++) {
         sum += weights[i];
         if (rand <= sum) {
-          document.getElementById('result').textContent = `You got: ${items[i].name}!`;
+          document.getElementById('result').textContent = `You are: ${items[i].name}!`;
           return;
         }
       }
